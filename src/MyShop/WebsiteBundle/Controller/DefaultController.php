@@ -2,12 +2,17 @@
 
 namespace MyShop\WebsiteBundle\Controller;
 
+use Sensio\Bundle\FramworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    /**
+     * @Route("/", name="homepage")
+     */
+    public function indexAction()
     {
-        return $this->render('WebsiteBundle:Default:index.html.twig', array('name' => $name));
+        return new Response("<html><head></head><body>Hello, world</body></html>");
     }
 }

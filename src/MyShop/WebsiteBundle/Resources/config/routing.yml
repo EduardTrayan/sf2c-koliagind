@@ -1,3 +1,0 @@
-website_homepage:
-    path:     /hello
-    defaults: { _controller: WebsiteBundle:Default }

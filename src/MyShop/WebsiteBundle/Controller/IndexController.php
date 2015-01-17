@@ -5,15 +5,19 @@ namespace MyShop\WebsiteBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
+use MyShop\CommonBundle\Controller\AbstractController;
 
-class IndexController extends Controller 
+/**
+ *
+ */
+class IndexController extends AbstractController
 {
     /**
      * @Route("/")
      */
     public function indexAction() 
     {
-        return new Response("<html><head></head><body>Hello, world</body></html>"); 
+        $this->render('WebsiteBundle:Index:index.html.twig');
     }
     
 }

@@ -3,3 +3,7 @@ parameters:
 services:
     myshop.common.controller:
         class: %myshop.common.controller.class%
+        abstract: true
+        calls:
+            - [setTemplating, ["@templating"]]
+            

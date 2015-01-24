@@ -1,8 +1,5 @@
 website:
-    resource: "@WebsiteBundle/Controller/"
-    type: annotation
+    resource: "@WebsiteBundle/Resources/config/routing.yml"
 
 common:
     resource: "@CommonBundle/Resources/config/routing.yml"
-    prefix:   /
-

@@ -6,9 +6,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Templating\EngineInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-/**
- * @Route(service="myshop.common.controller")
- */
 class AbstractController
 {
     /**

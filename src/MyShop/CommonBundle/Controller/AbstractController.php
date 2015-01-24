@@ -2,19 +2,30 @@
 
 namespace MyShop\CommonBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Templating\EngineInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
+/**
+ * @Route(service="myshop.common.controller")
+ */
 class AbstractController
 {
+    /**
+     * @var EngineInterface
+     */
     protected $templating;
-    
-    public function setTemplating($templating)
+
+    /**
+     * @param EngineInterface $templating
+     */
+    public function setTemplating(EngineInterface $templating)
     {
         $this->templating = $templating;
     }
     
     public function render($view, array $parameters = array())
     {
-        return new Response($this->templating->render($view, $parameters));
+       return new Response($this->templating->render($view, $parameters));
     }
 }

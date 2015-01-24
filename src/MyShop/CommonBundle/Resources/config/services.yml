@@ -6,4 +6,3 @@ services:
         abstract: true
         calls:
             - [setTemplating, ["@templating"]]
-            

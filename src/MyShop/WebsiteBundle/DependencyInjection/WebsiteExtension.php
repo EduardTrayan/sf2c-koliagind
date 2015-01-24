@@ -1,12 +1,12 @@
 <?php
-namespace MyShop\CommonBundle\DependencyInjection;
+namespace MyShop\WebsiteBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class CommonExtension extends Extension
+class WebsiteExtension extends Extension
 {
     /**
      * @param array $configs
@@ -17,4 +17,4 @@ class CommonExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }
-}
+} 

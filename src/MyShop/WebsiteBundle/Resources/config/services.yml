@@ -1,4 +1,7 @@
+parameters:
+    myshop.website.controller.class: MyShop\WebsiteBundle\Controller\IndexController
+
 services:
-#    website.example:
-#        class: MyShop\WebsiteBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    myshop.website.index:
+        class: %myshop.website.controller.class%
+        parent: myshop.common.controller

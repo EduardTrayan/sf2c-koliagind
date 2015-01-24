@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use MyShop\CommonBundle\Controller\AbstractController;
 
 /**
- *
+ * @Route(service="myshop.website.index")
  */
 class IndexController extends AbstractController
 {
@@ -17,7 +17,6 @@ class IndexController extends AbstractController
      */
     public function indexAction() 
     {
-        $this->render('WebsiteBundle:Index:index.html.twig');
+        return $this->render('WebsiteBundle:Index:index.html.twig');
     }
-    
 }

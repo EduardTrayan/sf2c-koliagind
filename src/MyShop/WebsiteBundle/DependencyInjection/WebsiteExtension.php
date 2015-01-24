@@ -17,4 +17,4 @@ class WebsiteExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }
-} 
+}

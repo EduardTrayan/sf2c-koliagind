@@ -1,0 +1,7 @@
+parameters:
+    myshop.website.controller.class: MyShop\WebsiteBundle\Controller\IndexController
+
+services:
+    myshop.website.index:
+        class: %myshop.website.controller.class%
+        parent: myshop.common.controller

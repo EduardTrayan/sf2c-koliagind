@@ -6,8 +6,8 @@
 !app/cache/.gitkeep
 !app/logs/.gitkeep
 /build/
-/vendor/
-/bin/
+/vendor/*
+/bin/*
 /composer.phar
 /LICENSE
 /UPGRADE-2.2.md
@@ -15,3 +15,5 @@
 /UPGRADE-2.4.md
 /UPGRADE.md
 /web/config.php
+/src/.htaccess
+/.idea/

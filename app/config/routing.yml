@@ -1,0 +1,5 @@
+website:
+    resource: "@WebsiteBundle/Resources/config/routing.yml"
+
+common:
+    resource: "@CommonBundle/Resources/config/routing.yml"

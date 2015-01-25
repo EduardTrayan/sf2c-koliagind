@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Templating\EngineInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-class AbstractController
+abstract class AbstractController
 {
     /**
      * @var EngineInterface

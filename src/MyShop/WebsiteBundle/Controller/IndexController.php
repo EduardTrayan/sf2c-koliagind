@@ -13,7 +13,7 @@ use MyShop\CommonBundle\Controller\AbstractController;
 class IndexController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="index")
      */
     public function indexAction()
     {

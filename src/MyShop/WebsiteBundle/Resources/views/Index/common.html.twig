@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+{% import 'WebsiteBundle:Index:macro.html.twig' as macro %}
+
+{% block body %}
+    {% block menu %}
+        <div class="menu">
+            {{ macro.show_menu() }}
+        </div>
+    {% endblock menu %}
+    {{ parent() }}
+{% endblock body %}

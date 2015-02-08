@@ -1,9 +1,10 @@
-{% extends '::base.html.twig' %}
+{% extends 'WebsiteBundle:Index:common.html.twig' %}
 
 {% block title %}
 Contacts
 {% endblock %}
 
 {% block body %}
-Contact page
+    {{ parent() }}
+    Contact page
 {% endblock %}
